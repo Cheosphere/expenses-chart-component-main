@@ -6,6 +6,8 @@ El desafío es construir este componente de gráfico de gastos y lograr que se p
 - CSS
 - JS Vanilla
 
+![desktop-design](https://user-images.githubusercontent.com/112582420/192111642-7af8108d-4c61-4d79-a7ca-59cd54e490aa.jpg)
+
 # Guía de Estilo
 
 ## Diseño
