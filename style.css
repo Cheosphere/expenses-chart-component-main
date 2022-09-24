@@ -1,0 +1,318 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+li {
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--cream);
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_card {
+    width: 100%;
+    max-width: 540px;
+    height: 125px;
+    margin-bottom: 1.5rem;
+    padding: 1.7rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 1.2rem;
+    background-color: var(--soft-red);
+    color: var(--very-pale-orange);
+    transition: all .25s ease-in-out;
+}
+
+.header_card_title {
+    margin-bottom: .45rem;
+    font-size: 1.1em;
+    font-weight: 400;
+    letter-spacing: .01rem;
+    color: var(--cream);
+    -webkit-text-stroke: .01rem var(--soft-red);
+    transition: all .25s ease-in-out;
+}
+
+.header_card_money {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .02rem;
+    -webkit-text-stroke: .01rem var(--soft-red);
+    transition: all .25s ease-in-out;
+}
+
+.header_card_logo {
+    width: fit-content;
+    align-self: flex-end;
+    padding-top: .75rem;
+    padding-right: .45rem;
+    transition: all .25s ease-in-out;
+}
+
+.content_card {
+    width: 100%;
+    max-width: 540px;
+    height: 511px;
+    padding: 2rem 2.5rem;
+    position: relative;
+    border-radius: 1.2rem;
+    background-color: var(--very-pale-orange);
+    transition: all .25s ease-in-out;
+}
+
+.content_card_title {
+    font-size: 2rem;
+    margin-bottom: 4.1rem;
+    -webkit-text-stroke: .03rem var(--cream);
+    transition: all .25s ease-in-out;
+}
+
+.content_card_graph {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: all .25s ease-in-out;
+}
+
+.content_card_graph_day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--medium-brown);
+    -webkit-text-stroke: .03rem var(--cream);
+}
+
+.content_card_graph_bar {
+    width: 3.15rem;
+    height: 50px;
+    margin-bottom: .45rem;
+    border-radius: .3rem;
+    background-color: var(--soft-red);
+    transition: all .25s ease-in-out;
+}
+
+.content_card_graph_bar:hover {
+    opacity: .55;
+    cursor: pointer;
+}
+
+.bar2 {
+    height: 100px;
+}
+
+.bar3 {
+    width: 3.136rem;
+    height: 150px;
+    background-color: var(--cyan);
+}
+
+.over_money_1,
+.over_money_2 {
+    width: 75px;
+    height: 40px;
+    margin-left: .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    font-size: 1.08rem;
+    letter-spacing: .045rem;
+    -webkit-text-stroke: .005rem var(--dark-brown);
+    color: var(--very-pale-orange);
+    position: absolute;
+    top: 5.75rem;
+    border-radius: 4px;
+    background-color: var(--dark-brown);
+    transition: all .25s ease-in-out;
+}
+
+.over_money_2 {
+    width: 71px;
+    top: 9.55rem;
+    letter-spacing: .065rem;
+}
+
+.show_money {
+    opacity: 1;
+}
+
+.bar4 {
+    width: 3.17rem;
+    height: 89px;
+}
+
+.bar5 {
+    height: 67px;
+}
+
+.bar6 {
+    height: 124px;
+}
+
+.bar7 {
+    height: 73px;
+}
+
+.divider {
+    margin: 2rem 0;
+    opacity: .1;
+}
+
+.content_card_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_card_footer_left_total {
+    font-size: 1.1rem;
+    color: var(--medium-brown);
+    font-weight: 400;
+    letter-spacing: .02rem;
+    -webkit-text-stroke: .03rem var(--cream);
+}
+
+.content_card_footer_left_money {
+    font-size: 3rem;
+    -webkit-text-stroke: .03rem var(--cream);
+}
+
+.content_card_footer_right {
+    margin-top: 1.5rem;
+    text-align: right;
+}
+
+.content_card_footer_right_percentage {
+    font-size: 1.1rem;
+    letter-spacing: .02rem;
+    -webkit-text-stroke: .03rem var(--cream);
+}
+
+.content_card_footer_right_last {
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: .018rem;
+    color: var(--medium-brown);
+    -webkit-text-stroke: .03rem var(--cream);
+}
+
+@media screen and (max-width: 580px) {
+
+    .header_card {
+        width: 92%;
+        max-width: 420px;
+        height: 97px;
+        margin-bottom: 1rem;
+        padding: 0 1.1rem;
+        border-radius: .7rem;
+        justify-content: center;
+    }
+
+    .header_card_title {
+        margin-bottom: .2rem;
+        font-size: 1rem;
+    }
+
+    .header_card_money {
+        font-size: 1.5rem;
+    }
+
+    .header_card_logo {
+        align-self: flex-end;
+        padding-top: .4rem;
+        padding-right: 0rem;
+        transform: scale(.85);
+    }
+
+    .content_card {
+        width: 92%;
+        max-width: 420px;
+        height: fit-content;
+        padding: 1.3rem 1rem;
+        border-radius: .7rem;
+        background-color: var(--very-pale-orange);
+    }
+
+    .content_card_title {
+        font-size: 1.5rem;
+        margin-bottom: 4.1rem;
+    }
+
+    .content_card_graph_bar {
+        width: 2rem;
+        border-radius: .2rem;
+    }
+
+    .content_card_graph_day {
+        font-size: .7rem;
+    }
+
+    .divider {
+        margin: 1.5rem 0;
+    }
+
+    .content_card_footer_left_total {
+        font-size: .95rem;
+    }
+
+    .content_card_footer_left_money {
+        font-size: 1.95rem;
+    }
+
+    .content_card_footer_right_percentage,
+    .content_card_footer_right_last {
+        font-size: 1rem;
+    }
+
+    .content_card_footer_right {
+        margin-top: 1rem;
+    }
+
+    .over_money_1,
+    .over_money_2 {
+        margin: 0;
+        top: 4.5rem;
+        transform: scale(.85);
+    }
+
+    .over_money_2 {
+        top: 8.32rem;
+    }
+
+}
